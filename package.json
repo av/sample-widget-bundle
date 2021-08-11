@@ -1,0 +1,22 @@
+{
+  "name": "sample-widget-bundle",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:av/sample-widget-bundle.git",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-externals": "^0.5.2"
+  },
+  "scripts": {
+    "start": "parcel ./src/index.js",
+    "build": "parcel build ./src/index.js"
+  },
+  "externals": {
+    "react": "window.PremiumPortal.React",
+    "react-dom": "window.PremiumPortal.ReactDOM"
+  },
+  "dependencies": {
+    "react": "^17.0.2"
+  }
+}
